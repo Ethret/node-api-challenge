@@ -40,13 +40,24 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+1. Middleware functions through Express can get the request and response objects, operate on them, and trigger some action if requested.
+2. Routing is a way to select which request handler function is executed and does so based on the URL visited and the HTTP method used. This allows you to break an app into smaller parts.
+
 - [ ] Describe Middleware?
+
+Middleware functions can get the request and response objects, operate on them, and (when specified) trigger some action. Examples are logging or security.
 
 - [ ] Describe a Resource?
 
+Everything is a resource and each resource is accessible by a unique URL. They can have multiple representations and management happens via HTTP methods.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+An API can send back HTTP statuses like 200 to let the client know that the request was successful.
+
 - [ ] How can we partition our application into sub-applications?
+
+Routing allows us to split an app into sub-apps, making it easier to maintain.
 
 ## Minimum Viable Product
 
