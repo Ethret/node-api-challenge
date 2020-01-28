@@ -80,7 +80,7 @@ router.delete('/:id', validateProjectId, (req, res) => {
 router.put('/:id', validateProjectId, validateProject, (req, res) => {
     const id = req.params.id;
     const data = req.body;
-    db.insert(id, data)
+    db.update(id, data)
     .then(project => {
         res.status(200).json(project)
       })
